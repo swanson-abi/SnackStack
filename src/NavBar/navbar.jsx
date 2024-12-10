@@ -6,7 +6,7 @@ export default function NavBar() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
             <div className="container">
                 {/* Left */}
-                <div className="navbar-brand">
+                <div className="fs-2 navbar-brand">
                     <a href="https://github.com/swanson-abi/SnackStack" 
                        className="text-dark fs-4">
                         <i className="fa-brands fa-github"></i>
@@ -20,7 +20,7 @@ export default function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div className="fs-2 collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item px-3">
                             <a className="nav-link" href="/">Home</a>
@@ -38,7 +38,7 @@ export default function NavBar() {
                 </div>
 
                 {/* Right */}
-                <div className="d-flex align-items-center">
+                <div className=" fs-2 d-flex align-items-center">
                     <i className="nav-search fa-solid fa-magnifying-glass me-3"></i>
                     <img
                         className="nav-img rounded-circle"
