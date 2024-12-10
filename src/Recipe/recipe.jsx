@@ -1,9 +1,8 @@
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  './recipe.css';
 export default function Recipe({ img, title, list, desc, categories }) {
     return (
-        <BrowserRouter>
             <div className="card shadow-sm mb-4">
                 <img
                     className="card-img-top"
@@ -52,6 +51,5 @@ export default function Recipe({ img, title, list, desc, categories }) {
                     </div>
                 </div>
             </div>
-        </BrowserRouter>
     );
 }

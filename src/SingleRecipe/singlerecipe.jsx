@@ -1,9 +1,8 @@
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./singlerecipe.css";
 
 export default function SingleRecipe() {
     return (
-        <BrowserRouter>
             <div className="singlerecipe">
                 <div className="singlerecipeWrapper">
                     <img
@@ -61,6 +60,5 @@ export default function SingleRecipe() {
                     </p>
                 </div>
             </div>
-        </BrowserRouter>
     );
 }

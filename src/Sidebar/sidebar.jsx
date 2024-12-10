@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Sidebar() {
@@ -13,7 +13,6 @@ export default function Sidebar() {
   ];
 
   return (
-    <BrowserRouter>
       <div className="col-md-3 sidebar p-4 bg-light shadow-sm">
         <div className="sidebar-item">
           <h4 className="fs-3 text-center fw-bold mb-4 text-primary">MOST POPULAR</h4>
@@ -42,6 +41,5 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-    </BrowserRouter>
   );
 }

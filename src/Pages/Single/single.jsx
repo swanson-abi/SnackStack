@@ -1,4 +1,5 @@
-import Sidebar from "../../components/sidebar/Sidebar";
+
+import Sidebar from "../../Sidebar/sidebar";
 import SingleRecipe from "../../SingleRecipe/singlerecipe";
 import "./single.css";
 

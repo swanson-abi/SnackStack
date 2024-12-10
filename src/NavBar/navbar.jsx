@@ -23,7 +23,7 @@ export default function NavBar() {
                 <div className="fs-2 collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="/">Home</a>
+                            <a className="nav-link" href="./Home">Home</a>
                         </li>
                         <li className="nav-item px-3">
                             <a className="nav-link" href="./Recipes">Recipes</a>
@@ -32,7 +32,7 @@ export default function NavBar() {
                             <a className="nav-link" href="./Calendar">Calendar</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="./LogOut">Log Out</a>
+                            <a className="nav-link" href="./Login">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -42,6 +42,7 @@ export default function NavBar() {
                     <i className="nav-search fa-solid fa-magnifying-glass me-3"></i>
                     <img
                         className="nav-img rounded-circle"
+                        href="./Settings"
                         src="https://images.pexels.com/photos/4236828/pexels-photo-4236828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Profile"
                         style={{ width: "40px", height: "40px", objectFit: "cover" }}
