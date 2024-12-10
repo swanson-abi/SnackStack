@@ -40,13 +40,14 @@ export default function NavBar() {
                 {/* Right */}
                 <div className=" fs-2 d-flex align-items-center">
                     <i className="nav-search fa-solid fa-magnifying-glass me-3"></i>
+                    <a className="propic" href="./Settings">
                     <img
                         className="nav-img rounded-circle"
-                        href="./Settings"
                         src="https://images.pexels.com/photos/4236828/pexels-photo-4236828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Profile"
                         style={{ width: "40px", height: "40px", objectFit: "cover" }}
                     />
+                    </a>
                 </div>
             </div>
         </nav>
