@@ -9,6 +9,8 @@ import Settings from "./Pages/Settings/settings";
 import Calendar from "./Pages/Calendar/calendar";
 import Cuisine from "./Pages/Cuisine";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Searched from "./Pages/Searched";
+import RecipeDetail from "./Pages/RecipeDetail";
 
 
 function App() {
@@ -23,8 +25,9 @@ function App() {
         <Route path="/Cuisine/:type" element={<Cuisine />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/Write" element={<Write />} />
-        <Route path="/recipe/:recipeId" element={<Single />} />
         <Route path="/Calendar" element={<Calendar />} />
+        <Route path="/searched/:search" element={<Searched />} />
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
     </BrowserRouter>
   );
