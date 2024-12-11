@@ -23,16 +23,16 @@ export default function NavBar() {
                 <div className="fs-2 collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="./Home">Home</a>
+                            <a className="nav-link" href="/Home">Home</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="./Recipes">Recipes</a>
+                            <a className="nav-link" href="/Recipes">Recipes</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="./Calendar">Calendar</a>
+                            <a className="nav-link" href="/Calendar">Calendar</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="./Login">Login</a>
+                            <a className="nav-link" href="/Login">Login</a>
                         </li>
                     </ul>
                 </div>
