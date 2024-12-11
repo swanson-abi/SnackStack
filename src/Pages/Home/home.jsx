@@ -1,7 +1,10 @@
 
-import Header from "../../Header/header";
-import Recipes from "../../Recipes/recipes";
-import Sidebar from "../../Sidebar/sidebar";
+import Header from "../../Components/Header/header";
+// import Recipes from "../../Components/Recipes/recipes";
+// import Sidebar from "../../Components/Sidebar/sidebar";
+import Veggie from "../../Components/Veggie";
+import Popular from "../../Components/Popular";
+
 import "./home.css";
 
 export default function Home() {
@@ -9,9 +12,9 @@ export default function Home() {
     <>
     <Header/>
     <div className="home">
-      <Recipes />
-      {/* <SingleRecipe/> */}
-      <Sidebar />
+      <Veggie/>
+      <Popular/>
+      {/* <Sidebar /> */}
     </div>
   </>
 

@@ -11,7 +11,7 @@ export default function SingleRecipe() {
                         alt=""
                     />
                     <h1 className="singlerecipeTitle">
-                        Lorem ipsum dolor
+                        Single Recipe Title
                         <div className="singlerecipeEdit">
                             <i className="singlerecipeIcon far fa-edit"></i>
                             <i className="singlerecipeIcon far fa-trash-alt"></i>
@@ -21,8 +21,8 @@ export default function SingleRecipe() {
                         <span>
                             Author:
                             <b className="singlerecipeAuthor">
-                                <Link className="link" to="/recipes?username=Safak">
-                                    Safak
+                                <Link className="link" to="/recipes?username=Abbey">
+                                   Abbey
                                 </Link>
                             </b>
                         </span>

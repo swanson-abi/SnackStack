@@ -1,5 +1,5 @@
 
-import NavBar from "./NavBar/navbar";
+import NavBar from "./Components/NavBar/navbar";
 import Home from "./Pages/Home/home";
 import Login from "./Pages/Login/login";
 import Write from "./Pages/Write/write";
