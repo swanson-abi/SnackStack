@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./navbar.css"
 
 export default function NavBar() {
+    const user = true;
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
             <div className="container">
@@ -32,22 +33,33 @@ export default function NavBar() {
                             <a className="nav-link" href="/Calendar">Calendar</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="/Login">Login</a>
+                            {user && <a className="nav-link" href="/">Log Out</a>}
                         </li>
                     </ul>
                 </div>
 
                 {/* Right */}
                 <div className=" fs-2 d-flex align-items-center">
-                    <i className="nav-search fa-solid fa-magnifying-glass me-3"></i>
+                    {user ? (
                     <a className="propic" href="./Settings">
-                    <img
+                        <img
                         className="nav-img rounded-circle"
                         src="https://images.pexels.com/photos/4236828/pexels-photo-4236828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Profile"
+                        style={{ width: "40px", height: "40px", objectFit: "cover" }}/>
+                    </a>) 
+                    :
+                   <ul className="navbar-nav">
+                    <a className="nav-link" href="/Login">Login</a>
+                    <a className="nav-link" href="/Register">Register</a>
+                    <img
+                        className="nav-img rounded-circle"
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                        alt="Profile"
                         style={{ width: "40px", height: "40px", objectFit: "cover" }}
                     />
-                    </a>
+                    </ul>}
+
                 </div>
             </div>
         </nav>

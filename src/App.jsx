@@ -3,7 +3,6 @@ import NavBar from "./Components/NavBar/navbar";
 import Home from "./Pages/Home/home";
 import Login from "./Pages/Login/login";
 import Write from "./Pages/Write/write";
-import Single from "./Pages/Single/single";
 import Register from "./Pages/Register/register";
 import Settings from "./Pages/Settings/settings";
 import Calendar from "./Pages/Calendar/calendar";
@@ -11,10 +10,11 @@ import Cuisine from "./Pages/Cuisine";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Searched from "./Pages/Searched";
 import RecipeDetail from "./Pages/RecipeDetail";
+import Recipes from "./Components/Recipes/recipes";
 
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <BrowserRouter>
       <NavBar />
@@ -41,6 +41,10 @@ function App() {
           {!user && <Register />}
         </>} />
         <Route path="/Calendar" element={<Calendar />} />
+        <Route path="/Recipes" element={<>
+          {user && <Recipes />}
+          {!user && <Register />}
+        </>} />
         <Route path="/searched/:search" element={<Searched />} />
         <Route path="/recipe/:id" element={<RecipeDetail />} />
       </Routes>
