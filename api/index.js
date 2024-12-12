@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 require('dotenv').config();
 const mongoose = require("mongoose");
 const authRouter = require("./routes/auth");
+const usersRouter = require("./routes/users");
+const recipeRouter = require("./routes/recipe");
 
 dotenv.config();
 app.use(express.json());
@@ -17,6 +19,8 @@ mongoose
   .catch((err) => console.log(err));
 
 app.use("/api/auth", authRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/recipes", recipeRouter);
 
 app.use("/",(req,res) =>{
     console.log("main url")
