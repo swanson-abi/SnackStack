@@ -7,9 +7,12 @@ const authRouter = require("./routes/auth");
 const usersRouter = require("./routes/users");
 const recipeRouter = require("./routes/recipe");
 const multer = require("multer");
+const cors = require('cors');
 
 dotenv.config();
+app.use(cors());
 app.use(express.json());
+
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -40,6 +43,6 @@ app.use("/api/recipes", recipeRouter);
 app.use("/",(req,res) =>{
     console.log("main url")
 })
-app.listen(3000, () =>{
+app.listen(5000, () =>{
     console.log("object")
 })
